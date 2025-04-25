@@ -8,7 +8,10 @@
 
 		<title> Antoni Krajewski </title>
 		<meta name="Description" content="//Strona ze wszystkimi ćwiczeniami w htmlu//" />
+   		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    
     <style>
+        /* Gradient Animation */
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
@@ -21,20 +24,42 @@
             }
         }
 
+        /* Apply Gradient Background */
         body {
             margin: 0;
             height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
+            font-family: 'Roboto', sans-serif; /* Default font */
+        }
+
+        /* Heading with Lobster Font */
+        h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Paragraph with Roboto Font */
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            margin: 0.5rem 0 0;
         }
     </style>
-	</head>
-
-	<body>
-
-
-
+</head>
+<body>
+    <div>
+        <h1>Welcome to My Website</h1>
+        <p>This page features an animated gradient background and custom fonts.</p>
+    </div>
+	
 
 </body>
 </html>
