@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@
             margin-top: 5px;
         }
 
-         /* Image Styling with Frame */
+        /* Image Styling with Frame and Hover Effects */
         .text-image {
             margin-top: 10px;
             max-width: 100%; /* Ensure image doesn't exceed its container */
@@ -82,6 +82,14 @@
             border: 5px solid #ffffff; /* White border around the image */
             border-radius: 15px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a nice effect */
+            cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .text-image:hover {
+            transform: scale(1.1); /* Slight zoom-in effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+            border-color: #ffd700; /* Change border color to a gold tone on hover */
         }
 
         /* Responsive Design */
@@ -101,21 +109,23 @@
     <div class="top-text">
         Bist du extrovertiert oder introvertiert?
     </div>
-        <div class="side-text-container">
-            <!-- Left Text Group -->
-            <div class="text-group">
-                <div class="left-text"> EXTROVERTIERT </div>
-                 <a href="extro.html">
-                <img src="extrovert.jpg" WIDTH=360 HEIGHT=360 alt="Left Image" class="text-image"> </a>
-                <div class="subtext"> Extrovertierte Person: lebhaft und kontaktfreudig, fühlt sich in großen Gruppen wohl und gewinnt Energie durch soziale Interaktionen. </div>
-            </div>
-            <!-- Right Text Group -->
-            <div class="text-group">
-                <div class="right-text">INTROVERTIERT</div>
-                 <a href="intro.html">
-                <img src="introvert.jpg" WIDTH=360 HEIGHT=360 alt="Left Image" class="text-image"> </a>
-                <div class="subtext"> Introvertierte Person: ruhig und nachdenklich, zieht Zeit allein oder im kleinen Kreis vor und lädt ihre Energie in stillen Momenten auf. </div>
-            </div>
+
+    <div class="side-text-container">
+        <!-- Left Text Group -->
+        <div class="text-group">
+            <div class="left-text">EXTROVERTIERT</div>
+            <a href="extro.html">
+                <img src="extrovert.jpg" width="360" height="360" alt="Extrovert Image" class="text-image">
+            </a>
+            <div class="subtext">Extrovertierte Person: lebhaft und kontaktfreudig, fühlt sich in großen Gruppen wohl und gewinnt Energie durch soziale Interaktionen.</div>
+        </div>
+        <!-- Right Text Group -->
+        <div class="text-group">
+            <div class="right-text">INTROVERTIERT</div>
+            <a href="intro.html">
+                <img src="introvert.jpg" width="360" height="360" alt="Introvert Image" class="text-image">
+            </a>
+            <div class="subtext">Introvertierte Person: ruhig und nachdenklich, zieht Zeit allein oder im kleinen Kreis vor und lädt ihre Energie in stillen Momenten auf.</div>
         </div>
     </div>
 </body>
