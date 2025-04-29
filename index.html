@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
@@ -63,14 +63,22 @@
         .side-text-container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             width: 80%; /* Adjust width as needed */
             margin: 0 auto; /* Center the container */
             margin-top: 20px; /* Add spacing below the main content */
         }
+        .text-group {
+            text-align: center;
+        }
         .left-text, .right-text {
             font-size: 1.2rem;
             font-weight: bold;
+        }
+        .subtext {
+            font-size: 1rem;
+            font-weight: normal;
+            margin-top: 5px;
         }
 
         /* Responsive Design */
@@ -79,9 +87,8 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .left-text, .right-text {
+            .text-group {
                 margin: 10px 0;
-                text-align: center;
             }
         }
     </style>
@@ -96,11 +103,16 @@
     <div class="main-content">
         <p>This page features an animated gradient background and custom fonts.</p>
         <div class="side-text-container">
-            <div class="left-text">Left side text goes here. <br>
-                . <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. 
-            
+            <!-- Left Text Group -->
+            <div class="text-group">
+                <div class="left-text">Left side text goes here.</div>
+                <div class="subtext">Additional text for the left side.</div>
             </div>
-            <div class="right-text">Right side text goes here.</div>
+            <!-- Right Text Group -->
+            <div class="text-group">
+                <div class="right-text">Right side text goes here.</div>
+                <div class="subtext">Additional text for the right side.</div>
+            </div>
         </div>
     </div>
 </body>
