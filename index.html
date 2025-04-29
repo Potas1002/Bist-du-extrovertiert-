@@ -35,59 +35,6 @@
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             font-family: 'Roboto', sans-serif;
-            position: relative; /* To position background decorations */
-            overflow: hidden; /* Prevent decorations from spilling out of the viewport */
-        }
-
-        /* Decorative Pattern: Circles */
-        .circle {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.15; /* Semi-transparent for subtle effect */
-            background: rgba(255, 255, 255, 0.4); /* White with transparency */
-            animation: float 10s ease-in-out infinite; /* Floating animation */
-        }
-
-        /* Circle Sizes and Positions */
-        .circle1 {
-            width: 150px;
-            height: 150px;
-            top: 10%;
-            left: 20%;
-        }
-
-        .circle2 {
-            width: 200px;
-            height: 200px;
-            top: 50%;
-            left: 75%;
-        }
-
-        .circle3 {
-            width: 100px;
-            height: 100px;
-            bottom: 20%;
-            left: 40%;
-        }
-
-        .circle4 {
-            width: 120px;
-            height: 120px;
-            top: 70%;
-            right: 10%;
-        }
-
-        /* Floating Animation */
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-            100% {
-                transform: translateY(0);
-            }
         }
 
         /* Top Header */
@@ -110,7 +57,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            width: 60%; /* Adjust width as needed */
+            width: 70%; /* Adjust width as needed */
             margin: 0 auto; /* Center the container */
             margin-top: 20px; /* Add spacing below the main content */
         }
@@ -124,7 +71,7 @@
         .subtext {
             font-size: 1.5rem;
             font-weight: normal;
-            margin-top: 5px;
+            margin-top: 15px;
         }
 
         /* Image Styling with Frame and Hover Effects */
@@ -142,7 +89,7 @@
         .text-image:hover {
             transform: scale(1.1); /* Slight zoom-in effect on hover */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
-            border-color: #ffd700; /* Change border color to a gold tone on hover */
+            border-color: #fcd9ea; /* Change border color to a gold tone on hover */
         }
 
         /* Responsive Design */
@@ -163,12 +110,6 @@
         Bist du extrovertiert oder introvertiert?
     </div>
 
-    <!-- Decorative Circles -->
-    <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
-    <div class="circle circle3"></div>
-    <div class="circle circle4"></div>
-
     <div class="side-text-container">
         <!-- Left Text Group -->
         <div class="text-group">
@@ -176,7 +117,7 @@
             <a href="extro.html">
                 <img src="extrovert.jpg" width="360" height="360" alt="Extrovert Image" class="text-image">
             </a>
-            <div class="subtext">Extrovertierte Person: lebhaft und kontaktfreudig, fühlt sich in großen Gruppen wohl und gewinnt Energie durch soziale Interaktionen.</div>
+            <div class="subtext">Extrovertierte Person: lebhaft und kontaktfreudig, <br>fühlt sich in großen Gruppen wohl und gewinnt<br> Energie durch soziale Interaktionen.</div>
         </div>
         <!-- Right Text Group -->
         <div class="text-group">
@@ -184,7 +125,7 @@
             <a href="intro.html">
                 <img src="introvert.jpg" width="360" height="360" alt="Introvert Image" class="text-image">
             </a>
-            <div class="subtext">Introvertierte Person: ruhig und nachdenklich, zieht Zeit allein oder im kleinen Kreis vor und lädt ihre Energie in stillen Momenten auf.</div>
+            <div class="subtext">Introvertierte Person: ruhig und nachdenklich, <br>zieht Zeit allein oder im kleinen Kreis vor und<br> lädt ihre Energie in stillen Momenten auf.</div>
         </div>
     </div>
 </body>
