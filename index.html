@@ -74,6 +74,16 @@
             margin-top: 5px;
         }
 
+         /* Image Styling with Frame */
+        .text-image {
+            margin-top: 10px;
+            max-width: 100%; /* Ensure image doesn't exceed its container */
+            height: auto; /* Maintain aspect ratio */
+            border: 5px solid #ffffff; /* White border around the image */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a nice effect */
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .side-text-container {
@@ -95,11 +105,13 @@
             <!-- Left Text Group -->
             <div class="text-group">
                 <div class="left-text"> EXTROVERTIERT </div>
+                <img src="extrovert.jpg" alt="Left Image" class="text-image">
                 <div class="subtext"> . </div>
             </div>
             <!-- Right Text Group -->
             <div class="text-group">
                 <div class="right-text">INTROVERTIERT</div>
+                <img src="introvert.jpg" alt="Left Image" class="text-image">
                 <div class="subtext"> . </div>
             </div>
         </div>
