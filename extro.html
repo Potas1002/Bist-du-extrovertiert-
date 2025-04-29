@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvertiert</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        /* Gradient Animation */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Gradient Background (Warm Colors) */
+        body {
+            margin: 0;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ff9a9e, #ffb347, #ffcc33, #f77062);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        /* Top Header */
+        .top-text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            font-size: 2rem; /* Larger font for the title */
+            z-index: 1000; /* Ensures it stays on top */
+        }
+
+        /* Content Style */
+        .content {
+            margin-top: 80px; /* Prevents content from overlapping with the header */
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Text -->
+    <div class="top-text">
+        EXTROVERTIERT
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <p>Welcome to the introvert page. Customize this content as needed!</p>
+    </div>
+</body>
+</html>
