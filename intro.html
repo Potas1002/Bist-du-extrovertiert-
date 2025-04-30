@@ -57,18 +57,96 @@
         .content {
             margin-top: 80px; /* Prevents content from overlapping with the header */
             font-size: 1.5rem;
+           /* Aesthetic Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            color: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f77062;
+            color: white;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.6);
         }
     </style>
 </head>
 <body>
     <!-- Top Text -->
     <div class="top-text">
-        INTROVERTIERT
+        Introviertet
     </div>
 
     <!-- Main Content -->
     <div class="content">
-        <p>Welcome to the introvert page. Customize this content as needed!</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Niemiecki</th>
+                    <th>Polski</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>verschlossen</td>
+                    <td>skryty, zamknięty w sobie</td>
+                </tr>
+                <tr>
+                    <td>still</td>
+                    <td>cichy, spokojny</td>
+                </tr>
+                <tr>
+                    <td>empfindlich/sensibel</td>
+                    <td>wrażliwy</td>
+                </tr>
+                <tr>
+                    <td>ruhig</td>
+                    <td>stonowany</td>
+                </tr>
+                <tr>
+                    <td>selbständig</td>
+                    <td>samodzielny, niezależny</td>
+                </tr>
+                <tr>
+                    <td>vorsichtig/behutsam</td>
+                    <td>ostrożny</td>
+                </tr>
+                <tr>
+                    <td>subtil/dezent</td>
+                    <td>subtelny </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+  <div>
+    <button 
+        onclick="window.location.href='index.html';" 
+        style="
+            background-color: white; 
+            color: black; 
+            border: 1px solid black; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            font-size: 1rem; 
+            cursor: pointer;
+        ">
+        Strona Główna
+    </button>
+</div>  
 </body>
 </html>
