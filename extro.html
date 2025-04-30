@@ -55,8 +55,37 @@
 
         /* Content Style */
         .content {
-            margin-top: 80px; /* Prevents content from overlapping with the header */
+            margin-top: 100px; /* Prevents content from overlapping with the header */
             font-size: 1.5rem;
+            width: 80%;
+        }
+
+        /* Aesthetic Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            color: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f77062;
+            color: white;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.6);
         }
     </style>
 </head>
@@ -68,18 +97,46 @@
 
     <!-- Main Content -->
     <div class="content">
-     <p> <UL TYPE=disc>
-             <Li> verschlossen - skryty, zamknięty w sobie </Li>
-             <Li> still - cichy, spokojny </Li>
-             <Li> empfindlich/sensibel - wrażliwy </Li>
-             <Li> ruhig - stonowany, spokojny</Li>
-             <Li> selbständig - samodzielny, niezależny</Li>
-             <Li> vorsichtig/behutsam - osrtożny</Li>
-             <Li> subtil/dezent - subtelny</Li>
-          </UL>
-        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>German Expression</th>
+                    <th>Polish Translation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>verschlossen</td>
+                    <td>secretive, closed in on oneself</td>
+                </tr>
+                <tr>
+                    <td>still</td>
+                    <td>quiet, calm</td>
+                </tr>
+                <tr>
+                    <td>empfindlich/sensibel</td>
+                    <td>sensitive</td>
+                </tr>
+                <tr>
+                    <td>ruhig</td>
+                    <td>subdued, calm</td>
+                </tr>
+                <tr>
+                    <td>selbständig</td>
+                    <td>independent, self-reliant</td>
+                </tr>
+                <tr>
+                    <td>vorsichtig/behutsam</td>
+                    <td>careful, cautious</td>
+                </tr>
+                <tr>
+                    <td>subtil/dezent</td>
+                    <td>subtle</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div>
+  <div>
     <button 
         onclick="window.location.href='index.html';" 
         style="
@@ -91,8 +148,8 @@
             font-size: 1rem; 
             cursor: pointer;
         ">
-        Go to Main Page
+        Strona Główna
     </button>
-</div>
+</div>  
 </body>
 </html>
